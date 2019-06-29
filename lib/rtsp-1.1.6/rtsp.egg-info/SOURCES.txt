@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+rtsp/__doc__
+rtsp/__init__.py
+rtsp/cvstream.py
+rtsp.egg-info/PKG-INFO
+rtsp.egg-info/SOURCES.txt
+rtsp.egg-info/dependency_links.txt
+rtsp.egg-info/not-zip-safe
+rtsp.egg-info/requires.txt
+rtsp.egg-info/top_level.txt
