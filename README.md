@@ -2,7 +2,7 @@
 
 ## Installation
 ```bash
-git clone https://github.com/ArtemyMagarin/onvif_tester.git
+git clone https://github.com/DocMorg/Onvif.git
 cd onvif_tester
 virtualenv -p /usr/bin/python env
 source env/bin/activate
