@@ -1,6 +1,6 @@
 # onvif_tester
 
-#For documentation follow link:
+For documentation follow link:
 http://tiny.cc/7nh08y
 
 ## Installation
