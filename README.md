@@ -1,11 +1,8 @@
 # onvif_tester
 
-For documentation follow link:
-http://tiny.cc/7nh08y
-
 ## Installation
 ```bash
-git clone https://github.com/DocMorg/Onvif.git
+git clone https://github.com/ArtemyMagarin/onvif_tester.git
 cd onvif_tester
 virtualenv -p /usr/bin/python env
 source env/bin/activate
