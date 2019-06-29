@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+<!--
+<form action="/login" method="post" class="form-horizontal">
+    <h2>Signin to ONVIF Tester</h2>
+          <input type="text" id="email" name="email" class="input-xlarge"
+            placeholder="Enter Email" required>
+
+          <input type="password" id="password" name="password" class="input-xlarge"
+            placeholder="Enter Password" required>
+
+          <input type="checkbox" id="remember_me" name="remember_me"
+          placeholder="Remember me">
+
+          <button type="submit" class="btn btn-success">Signin</button>
+  </form> -->
+
+  <!-- templates/login.html -->
+
+{% block content %}
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="alert">
+        <ul class="flashes">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+  {% endif %}
+  {% endwith %}
+<div class="column is-4 is-offset-4">
+    <h3 class="title">Signin to ONVIF Tester</h3>
+    <div class="box">
+        <form method="POST" action="/login">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="email" name="email" placeholder="Your Email" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="password" name="password" placeholder="Your Password">
+                </div>
+            </div>
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox" id="remember_me" name="remember_me">
+                    Remember me
+                </label>
+            </div>
+            <button class="button is-block is-info is-large is-fullwidth">Login</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

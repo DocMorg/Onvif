@@ -1,0 +1,70 @@
+<!-- Old Form Template-->
+<!-- 
+<form action="/register" method="post" class="form-horizontal">
+    <h2>Signup to ONVIF Tester</h2>
+      <input type="text" id="email" name="email" class="input-xlarge"
+        placeholder="Enter Email" required>
+
+      <input type="password" id="password" name="password" class="input-xlarge"
+        placeholder="Enter Password" required>
+
+	<input type="text" id="email" name="name" class="input-xlarge"
+        placeholder="Enter Name" required>
+
+        <input type="text" id="email" name="surname" class="input-xlarge"
+        placeholder="Enter surname" required>
+
+      <button type="submit" class="btn btn-success">Signup</button>
+  </form> -->
+
+<!-- templates/signup.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="alert">
+        <ul class="flashes">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+  {% endif %}
+  {% endwith %}
+<div class="column is-4 is-offset-4">
+    <h3 class="title">Sign Up to ONVIF Tester</h3>
+    <div class="box">
+        <form method="POST" action="/register">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" id="password" type="email"
+                     name="email" placeholder="Enter email" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" id="name" type="text" 
+                    name="name" placeholder="Enter name" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                  <input class="input is-large" id="surname" type="text" 
+                  name="surname" placeholder="Enter surname" autofocus="">
+              </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="password" id="password" 
+                    name="password" placeholder="Enter password">
+                </div>
+            </div>
+            <button type="submit" class="button is-block is-info is-large is-fullwidth">Signup</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
