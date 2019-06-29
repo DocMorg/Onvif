@@ -1,7 +1,7 @@
 # onvif_tester
 
 #For documentation follow link:
-#http://tiny.cc/7nh08y
+http://tiny.cc/7nh08y
 
 ## Installation
 ```bash
